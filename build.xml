@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project  default= "common.build" name="vt-jq"   basedir= ".">
+     <target name="common.build" >
+          <echo message="=====================concat code========================" />
+     </target>
+</project>

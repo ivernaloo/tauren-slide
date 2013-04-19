@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<style type="text/css">
+    html {overflow-y:scroll;}
+    body {margin:0; padding:50px 0 0; font:12px/1.5 \5b8b\4f53,Arial,sans-serif;background:#ffffff;}
+    div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+    table,td,tr,th{font-size:12px;}
+    ol,ul {list-style:none;}
+    li{list-style-type:none;}
+    img{vertical-align:top;border:0;}
+    h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+    address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
+    .hx a,.hx em,.fB{font-weight:bold;}
+    .clearfix{*zoom:1;}
+    .clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+    a {color:#252525; text-decoration:none;}
+    a:visited {text-decoration:none;}
+    a:hover {color:#ba2636;text-decoration:underline;}
+    a:active {color:#ba2636;}
+    .left,.c-fl{float:left;}
+    .right,.c-fr{float:right;}
+    .cover-title p{text-indent:4px;}
+    .m-table{line-height:27px;background:#fff;}
+    .table-row-odd{background:#f7f7f7;}
+    .house-hd{height:21px;margin-bottom:5px;}
+    .house-title{float:left;font-weight:bold;color:#666;}
+    .house-info{width:302px;height:90px;}
+    .house-name,.house-price,.house-location{float:left;height:27px;text-align:left;overflow:hidden;}
+    .house-name{width:74px;}
+    .house-price{width:34px;}
+    .house-location{width:36px;}
+    .N-houseMenu-select-arr {position: absolute;  z-index: 10;  border-color: #8d8d8d transparent transparent; border-style: solid dashed dashed; border-width: 5px 5px 0; font-size: 0; height: 0; width: 0; line-height: 0; margin:12px 0 0 6px;}
+    .N-houseMenu-select-over{}
+    .N-houseMenu-select-over .N-houseMenu-select-arr{ -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); -webkit-transition: all .25s ease 0s; -moz-transition: all .25s ease 0s; -o-transition: all .25s ease 0s; transition: all .25s ease 0s;}
+    .H-house-popselect{background:#f7f7f7; border:1px solid #CDCCCC; width:205px; height:140px; position:absolute; }
+    .H-house-popselect ul{padding:7px 0 0}
+    .H-house-popselect li{float:left; width:41px; line-height:25px; display:block; text-align:center; cursor:pointer; color:#666;}
+    .H-house-popselect li{float:left; width:41px; line-height:25px; display:block; text-align:center; cursor:pointer; color:#666;}
+    .H-house-scrollBox{ height:131px;overflow:hidden;}
+    .H-house-scrollbBody{float: left; overflow: hidden; clear:both;}
+    .H-house-scrollbBody li{float:left; width:300px;position: relative; list-style-type:none;}
+    .house-scrlCtrl .house-scrlPrev, .house-scrlCtrl .house-scrlNext { display: inline-block; float:left; background-color: #DADADA; color:#fff; font-weight:bold; border-radius: 9px; height:18px; line-height: 18px; width:18px; text-align:center; text-decoration:none; }
+    .house-scrlCtrl a.house-scrlPrev:hover, .house-scrlCtrl a.house-scrlNext:hover { background-color: #333; color:#fff; text-decoration:none; }
+    .house-scrlCtrl ul { display: inline-block; height: 16px; float:left; }
+    .house-scrlCtrl .house-num-count { float:left; padding:0 5px; }
+    .house-scrlCtrl .house-num-count span { height: 16px; line-height:16px; font-family: "Arial"; color:#ADADAD; }
+</style>
+
+<div class="house interval-dot H-house-scrollBox" style="width: 300px; margin: 0 auto;">
+    <div class="house-hd">
+        <h3 class="house-title">本周热销</h3>
+        <div class="house-scrlCtrl right"> <a href="" class="house-scrlPrev">&lt;</a>
+            <ul>
+                <li class="active"></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
+            <div class="house-num-count"><span class="house-numCount">1</span><span>/3</span></div>
+            <a href="" class="house-scrlNext">&gt;</a> </div>
+    </div>
+    <div style="width: 300px; overflow: hidden;" class="house-bd H-house-scrollbBody">
+        <ul style="width: 900px; " class="clearfix">
+            <li>
+                <table class="m-table house-info">
+                    <tbody><tr class="table-row-odd">
+                        <td><span class="house-name"><a title="路劲世界城" href="http://xf.house.163.com/bj/0QSc.html">路劲世界城</a></span><span class="house-price">18000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/3-0-0-0-0-0-0-0-0-1-0-1.html">昌平</a></span></td>
+                        <td><span class="house-name"><a title="紫金新干线" href="http://xf.house.163.com/bj/0DFJ.html">紫金新干线</a></span><span class="house-price">20000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/3-0-0-0-0-0-0-0-0-1-0-1.html">昌平</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="house-name"><a title="金隅观澜时代" href="http://xf.house.163.com/bj/0QHQ.html">金隅观澜时代</a></span><span class="house-price">16000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/3-0-0-0-0-0-0-0-0-1-0-1.html">昌平</a></span></td>
+                        <td><span class="house-name"><a title="首开国风美仑" href="http://xf.house.163.com/bj/0QLS.html">首开国风美仑</a></span><span class="house-price">13000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/84-0-0-0-0-0-0-0-0-1-0-1.html">通州</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="house-name"><a title="永定华庭" href="http://xf.house.163.com/bj/0QQO.html">永定华庭</a></span><span class="house-price">38000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/57-0-0-0-0-0-0-0-0-1-0-1.html">海淀</a></span></td>
+                        <td><span class="house-name"><a title="观巢" href="http://xf.house.163.com/bj/0RDO.html">观巢</a></span><span class="house-price">53000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/13-0-0-0-0-0-0-0-0-1-0-1.html">朝阳</a></span></td>
+                    </tr>
+                    </tbody></table>
+            </li>
+            <li>
+                <table class="m-table house-info">
+                    <tbody><tr class="table-row-odd">
+                        <td><span class="house-name"><a title="常楹公元" href="http://xf.house.163.com/bj/0RBD.html">常楹公元</a></span><span class="house-price">29800</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/13-0-0-0-0-0-0-0-0-1-0-1.html">朝阳</a></span></td>
+                        <td><span class="house-name"><a title="胜古誉园" href="http://xf.house.163.com/bj/0RDA.html">胜古誉园</a></span><span class="house-price">50000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/13-0-0-0-0-0-0-0-0-1-0-1.html">朝阳</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="house-name"><a title="东亚马赛公馆" href="http://xf.house.163.com/bj/0KNW.html">东亚马赛公馆</a></span><span class="house-price">20000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/30-0-0-0-0-0-0-0-0-1-0-1.html">大兴</a></span></td>
+                        <td><span class="house-name"><a title="首创·新悦都" href="http://xf.house.163.com/bj/0RAU.html">首创·新悦都</a></span><span class="house-price">14000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/41-0-0-0-0-0-0-0-0-1-0-1.html">房山</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="house-name"><a title="北京城建琨廷" href="http://xf.house.163.com/bj/0RCF.html">北京城建琨廷</a></span><span class="house-price">9300</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/41-0-0-0-0-0-0-0-0-1-0-1.html">房山</a></span></td>
+                        <td><span class="house-name"><a title="东亚印象台湖" href="http://xf.house.163.com/bj/0RBZ.html">东亚印象台湖</a></span><span class="house-price">12900</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/84-0-0-0-0-0-0-0-0-1-0-1.html">通州</a></span></td>
+                    </tr>
+                    </tbody></table>
+            </li>
+            <li>
+                <table class="m-table house-info">
+                    <tbody><tr class="table-row-odd">
+                        <td><span class="house-name"><a title="顶秀美泉小镇" href="http://xf.house.163.com/bj/0EMZ.html">顶秀美泉小镇</a></span><span class="house-price">12800</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/66-0-0-0-0-0-0-0-1-1.html">怀柔</a></span></td>
+                        <td><span class="house-name"><a title="龙德·紫金街" href="http://xf.house.163.com/bj/0RBL.html">龙德·紫金街</a></span><span class="house-price">850万</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/3-0-0-0-0-0-0-0-0-1-0-1.html">昌平</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="house-name"><a title="龙湖长楹天街" href="http://xf.house.163.com/bj/0KMH.html">龙湖长楹天街</a></span><span class="house-price">30000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/13-0-0-0-0-0-0-0-0-1-0-1.html">朝阳</a></span></td>
+                        <td><span class="house-name"><a title="华业东方玫瑰" href="http://xf.house.163.com/bj/0EDZ.html">华业东方玫瑰</a></span><span class="house-price">14500</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/84-0-0-0-0-0-0-0-0-1-0-1.html">通州</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="house-name"><a title="北京山语城" href="http://xf.house.163.com/bj/0QLT.html">北京山语城</a></span><span class="house-price">16800</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/44-0-0-0-0-0-0-0-0-1-0-1.html">丰台</a></span></td>
+                        <td><span class="house-name"><a title="璞瑅" href="http://xf.house.163.com/bj/0Dfe.html">璞瑅</a></span><span class="house-price">35000</span><span class="house-location"><a href="http://xf.house.163.com/bj/search/44-0-0-0-0-0-0-0-0-1-0-1.html">丰台</a></span></td>
+                    </tr>
+                    </tbody></table>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<project name="slide" default="build">
+    <echo message="Replacing old script links with new ones." />
+
+    <property file="build.properties" />
+    <property name="build.jsPath" value="${build.dir}/${base.js.path}" />
+    <property name="build.cssPath" value="${build.dir}/${base.css.path}" />
+
+
+
+    <target name="build" >
+        <echo message="Replacing old script links with new ones." />
+        <mkdir dir="${build.cssPath}" />
+
+    </target>
+
+    <target name="prepare">
+        <echo msg="Making directory ./builds" />
+        <mkdir dir="./builds" />
+    </target>
+</project>

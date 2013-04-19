@@ -1,0 +1,1495 @@
+body {
+    text-align:center;
+    font-family:\5B8B\4F53, serif;
+    background:#fff;
+    font-size:12px
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote {
+    padding:0;
+    margin:0
+}
+table, td, tr, th {
+    font-size:12px
+}
+li {
+    list-style-type:none
+}
+table {
+    margin:0 auto
+}
+img {
+    vertical-align:top;
+    border:0
+}
+ol, ul {
+    list-style:none
+}
+caption, th {
+    text-align:left
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size:12px;
+    font-weight:normal
+}
+q:before, q:after {
+    content:''
+}
+abbr, acronym {
+    border:0
+}
+address, caption, cite, code, dfn, em, th, var {
+    font-weight:normal;
+    font-style:normal
+}
+a {
+    color:#000;
+    text-decoration:none
+}
+a:visited {
+    color:#83006f;
+    text-decoration:none
+}
+a:hover {
+    color:#ba2636;
+    text-decoration:underline
+}
+a:active {
+    color:#ba2636
+}
+.cWhite, .cWhite:visited, .cWhite a {
+    color:#fff
+}
+.cYellow, .cYellow:visited {
+    color:#ff0
+}
+.cGreen, .cGreen:visited {
+    color:#008000
+}
+.cGray, .cGray:visited, .cGray a {
+    color:#333
+}
+.cDGray, .cDGray:visited, .cDGray a {
+    color:#727171
+}
+.cBlack, .cBlack:visited, .cBlack a {
+    color:#000
+}
+.cBlue, .cBlue:visited, .cBlue a {
+    color:#1e50a2
+}
+.cRed, .cRed:visited, .cRed a {
+    color:Red
+}
+.cDRed, .cDRed:visited, .cDRed a {
+    color:#ba2636
+}
+.cRed a:hover, a.cRed:hover, .cBlue a:hover, a.cBlue:hover, .cDRed a:hover, a.cDRed:hover, .cGray a:hover, a.cGray:hover, .cDGray a:hover, a.cDGray:hover, .cWhite a:hover, a.cWhite:hover, .cBlack a:hover, a.cBlack:hover, .cGreen a:hover, a.cGreen:hover, .cYellow a:hover, a.cYellow:hover {
+    color:#ba2636
+}
+.fB {
+    font-weight:bold
+}
+.fI {
+    font-style:italic
+}
+.f12px {
+    font-size:12px
+}
+.f14px {
+    font-size:14px
+}
+.left {
+    float:left
+}
+.right {
+    float:right
+}
+.hidden {
+    display:none
+}
+.unLine, .unLine a {
+    text-decoration:none
+}
+.noBorder {
+    border:0
+}
+.I_V_ {
+    background:url(http://img1.cache.netease.com/img09/icon/icon.png) left center no-repeat;
+    padding-left:18px
+}
+.I_M_ {
+    background:url(http://img1.cache.netease.com/img09/icon/icon.png) -457px center no-repeat;
+    padding-left:18px
+}
+.I_E_ {
+    background:url(http://img1.cache.netease.com/img09/icon/icon.png) -916px center no-repeat;
+    padding-left:32px
+}
+.foot {
+    margin:0 auto;
+    width:960px;
+    line-height:21px;
+    clear:both;
+    color:#4d4d4d
+}
+.foot .text {
+    padding:4px 0 5px;
+    border-bottom:1px solid #4d4d4d;
+    margin:0 0 5px
+}
+.foot a, .foot a:visited {
+    color:#4d4d4d
+}
+.foot a:hover {
+    color:#ba2636
+}
+.clear {
+    clear:both;
+    height:0;
+    overflow:hidden;
+    display:block
+}
+.clearfix:after {
+    clear:both;
+    height:0;
+    overflow:hidden;
+    display:block;
+    visibility:hidden;
+    content:"."
+}
+.blankW {
+    background:#fff
+}
+.blank3 {
+    clear:both;
+    height:3px;
+    overflow:hidden;
+    display:block
+}
+.blank6 {
+    clear:both;
+    height:6px;
+    overflow:hidden;
+    display:block
+}
+.blank9 {
+    clear:both;
+    height:9px;
+    overflow:hidden;
+    display:block
+}
+.blank9w {
+    background:#fff;
+    clear:both;
+    height:9px;
+    overflow:hidden;
+    display:block
+}
+.blank12 {
+    clear:both;
+    height:12px;
+    overflow:hidden;
+    display:block
+}
+.blank15 {
+    clear:both;
+    height:15px;
+    overflow:hidden;
+    display:block
+}
+.blank20 {
+    clear:both;
+    height:20px;
+    overflow:hidden;
+    display:block
+}
+.ntes-passport-nav-bg {
+    border-bottom:1px solid #e4e4e4;
+    background:none repeat-x scroll 0 0 #f4f4f4
+}
+.ntes-passport-nav {
+    height:39px;
+    line-height:39px;
+    margin:0 auto;
+    width:960px;
+    text-align:left
+}
+.web-version a {
+    float:left;
+    padding:0 15px;
+    color:#888
+}
+.ntes-web a {
+    padding-left:0
+}
+.ntes-mobile {
+    border-left:1px solid #e4e4e4;
+    border-right:1px solid #e4e4e4;
+    padding:0 0 0 15px
+}
+.ntes-mobile a {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/phone.png) no-repeat scroll 0 10px transparent
+}
+.ntes-pad {
+    padding:0 0 0 15px
+}
+.ntes-pad a {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/ipad.png) no-repeat scroll 0 12px transparent;
+    padding-left:18px
+}
+.ntes-link {
+    float:left;
+    border-right:1px solid #e4e4e4;
+    padding-right:15px
+}
+.passport-entry a {
+    padding:0 5px
+}
+.ntes-usercenter-logined, .ntes-usercenter-name {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/select.png) no-repeat scroll 174px 1px transparent
+}
+.ntes-usercenter {
+    position:relative
+}
+.ntes-usercenter-entry {
+    background:none repeat scroll 0 0 #fff;
+    color:#2b2b2b;
+    display:none;
+    left:56px;
+    line-height:18px;
+    overflow:hidden;
+    position:absolute;
+    text-align:left;
+    top:39px;
+    width:73%;
+    _width:142px;
+    z-index:2
+}
+.ntes-usercenter-entry .user-entry {
+    border:1px solid #dcdddd;
+    display:block;
+    padding:1px
+}
+.ntes-usercenter-entry a {
+    clear:both;
+    color:#2b2b2b;
+    display:block;
+    font-weight:normal;
+    height:21px;
+    line-height:21px;
+    text-indent:3px;
+    width:100%
+}
+.ntes-usercenter-entry a:hover {
+    background-color:#4472ae;
+    color:#fff;
+    text-decoration:none
+}
+.ntes-usercenter {
+    float:left
+}
+.ntes-nav-passport-login {
+    padding:0 5px 0 10px
+}
+.ntes-usercenter-loginout {
+    color:#727171;
+    padding:0 0 0 3px
+}
+.ntes-usercenter-logined {
+    float:left;
+    font-family:Verdana, "\fffd\fffd\fffd\fffd", sans-serif;
+    height:38px;
+    line-height:38px;
+    width:196px
+}
+.ntes-usercenter-name {
+    background-color:#f4f4f4;
+    color:#585858;
+    cursor:pointer;
+    width:190px;
+    padding-left:10px;
+    float:left
+}
+.ntes-usercenter-logined a:hover {
+    width:190px;
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/select-on.png) no-repeat scroll 2px 0 transparent
+}
+.rightCon {
+    float:right
+}
+.ntes-link a {
+    color:#585858
+}
+.ntes-usercenter-logined a {
+    text-decoration:none
+}
+.passport-entry {
+    float:left;
+    padding:2px 0 0 15px
+}
+.passport-entry .weibo a {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll 0 0 transparent;
+    display:block;
+    height:31px;
+    width:30px
+}
+.passport-entry .mail a {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll -40px 0 transparent;
+    display:block;
+    height:31px;
+    width:30px
+}
+.passport-entry .rss a {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll -80px 0 transparent;
+    display:block;
+    height:31px;
+    width:28px
+}
+.passport-entry .weibo a:hover {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll 0 -31px transparent
+}
+.passport-entry .mail a:hover {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll -40px -31px transparent
+}
+.passport-entry .rss a:hover {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll -80px -31px transparent
+}
+.N-nav-bottom {
+    color:#616161;
+    background:#333
+}
+.N-nav-bottom-copyright {
+    color:#ddd;
+    padding-right:2px
+}
+.N-nav-bottom-copyright-icon {
+    font-family:Arial
+}
+.N-nav-bottom-main {
+    margin:0 auto;
+    width:960px;
+    height:39px;
+    line-height:39px
+}
+.N-nav-bottom-main a, .N-nav-bottom-main a:visited {
+    padding:0 4px;
+    color:#ddd
+}
+.N-nav-bottom-main a:hover {
+    color:#ba2636
+}
+.ntes_foot {
+    text-align:center;
+    font-size:12px;
+    color:#4d4d4d
+}
+.ntes_foot p {
+    line-height:24px
+}
+.ntes_foot a, .ntes_foot a:visited {
+    color:#4d4d4d
+}
+.ntes_foot a:hover {
+    color:#ba2636
+}
+.ntes_foot_link1 {
+    padding:5px 0;
+    border-bottom:1px solid #4d4d4d
+}
+.ntes_foot_link2 {
+    margin-top:5px
+}
+.ntes_foot_text2 {
+    color:#F00
+}
+.running_head {
+    height:47px;
+    background:#080808
+}
+.running_head .running_head_main {
+    width:960px;
+    height:47px;
+    margin:0 auto;
+    position:relative;
+    z-index:99
+}
+.running_head_main h1 {
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/nav_tag.png) no-repeat;
+    _background:url(http://img1.cache.netease.com/f2e/sports/running/images/nav_tag_8.png) no-repeat;
+    width:123px;
+    height:77px;
+    line-height:400px;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:99
+}
+.running_head_links {
+    color:#aaa;
+    font-size:12px;
+    line-height:47px;
+    text-align:left;
+    margin-left:140px
+}
+.running_head_links a {
+    color:#aaa
+}
+img {
+    border:0
+}
+#slideshow {
+    position:relative;
+    height:420px;
+    width:960px;
+    margin:0 auto
+}
+#slideshow a {
+    float:left;
+    display:inline;
+    width:960px;
+    height:420px;
+    position:relative
+}
+#slideshow a:hover {
+    text-decoration:none
+}
+#slideshow img {
+    width:960px;
+    height:420px;
+    overflow:hidden
+}
+#slideshow .img {
+    position:absolute;
+    width:960px;
+    height:420px;
+    overflow:hidden;
+    left:0;
+    top:0
+}
+#slideshow .img span {
+    position:absolute;
+    width:19999px;
+    display:block
+}
+#slideshow .btns {
+    z-index:10;
+    position:absolute;
+    width:960px
+}
+#slideshow .btns ul {
+    position:absolute;
+    width:100px;
+    display:block;
+    height:14px;
+    overflow:hidden;
+    top:375px;
+    left:50%
+}
+#slideshow .btns ul li {
+    width:10px;
+    background:#fff;
+    float:left;
+    height:10px;
+    font-size:0;
+    overflow:hidden;
+    cursor:pointer;
+    margin-right:6px;
+    border:#60bf30 2px solid;
+    -webkit-border-radius:7px;
+    -moz-border-radius:7px;
+    border-radius:7px
+}
+#slideshow .btns ul li:hover {
+    background:#a7a7a6
+}
+#slideshow .btns ul li.on {
+    background:#60bf30;
+    cursor:default
+}
+#slideshow .btns ul li.on:hover {
+    background:#60bf30;
+    cursor:default
+}
+#slideshow .btns .btn-direction {
+    position:absolute;
+    width:70px;
+    display:none;
+    height:70px;
+    overflow:hidden;
+    top:165px;
+    cursor:pointer
+}
+#slideshow .btns .btn-direction .arrow {
+    position:absolute;
+    width:70px;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/btn_slideshow.png);
+    height:70px;
+    filter:alpha(opacity=80);
+    -moz-opacity:.8;
+    opacity:.8
+}
+#slideshow .btns div.prev {
+    left:0
+}
+#slideshow .btns div.prev .arrow {
+    left:0
+}
+#slideshow .btns div.next {
+    right:0
+}
+#slideshow .btns div.next .arrow {
+    right:0;
+    background-position:-80px 0
+}
+
+.paging {
+    opacity:.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:.5;
+    -khtml-opacity:.5;
+    height:420px;
+    position:absolute;
+    background:#000;
+    overflow:hidden
+}
+.pattern {
+    left:0
+}
+.subpattern {
+    right:0;
+    top:0
+}
+.wtit .info, .wtit .tit {
+    float:left
+}
+.wtit .info {
+    padding:35px 0 0 20px;
+    color:#989898
+}
+.wtit .info span {
+    margin:0 8px
+}
+.slideshow_info {
+    width:355px;
+    height:90px;
+    position:absolute;
+    right:0;
+    bottom:30px
+}
+.slideshow_mod_bg {
+    width:355px;
+    height:90px;
+    background:#000;
+    filter:alpha(opacity=70);
+    -moz-opacity:.7;
+    opacity:.7
+}
+.slideshow_mod {
+    width:325px;
+    height:90px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:#fff;
+    padding-right:30px;
+    text-align:right;
+    cursor:pointer
+}
+.slideshow_mod h3 {
+    margin-top:14px;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-size:30px;
+    font-weight:bold;
+    height:40px;
+    overflow:hidden
+}
+.slideshow_mod p {
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-size:18px;
+    font-weight:bold;
+    height:28px;
+    overflow:hidden
+}
+.running_nav {
+    width:960px;
+    margin:0 auto;
+    background:#fff
+}
+.button {
+    height:95px;
+    overflow:hidden
+}
+.button ul {
+    margin:0;
+    padding:0
+}
+.button li {
+    list-style-type:none;
+    float:left;
+    height:95px;
+    width:134px;
+    overflow:hidden;
+    line-height:100px;
+    padding:0 3px 0 0;
+    text-align:left
+}
+.button li .txt {
+    position:absolute;
+    z-index:2;
+    font-size:16px;
+    font-weight:bold;
+    width:134px;
+    text-align:center
+}
+.button li .txt a:link, .button li .txt a:hover, .button li .txt a:visited, .button li .txt a:active {
+    color:#202020;
+    text-decoration:none;
+    font-family:\5fae\8f6f\96c5\9ed1
+}
+.button li .c1, .button li .c2, .button li .c3, .button li .c4, .button li .c5, .button li .c6, .button li .c7 {
+    height:0;
+    overflow:hidden
+}
+.button li .c1 {
+    border-top:#b0d14f 10px solid;
+    position:absolute;
+    background-color:#b0d14f;
+    width:134px;
+    z-index:1
+}
+.button li .c2 {
+    border-top:#ffc700 10px solid;
+    position:absolute;
+    background-color:#ffc700;
+    width:134px;
+    z-index:1
+}
+.button li .c3 {
+    border-top:#da9950 10px solid;
+    position:absolute;
+    background-color:#da9950;
+    width:134px;
+    z-index:1
+}
+.button li .c4 {
+    border-top:#a00e2b 10px solid;
+    position:absolute;
+    background-color:#a00e2b;
+    width:134px;
+    z-index:1
+}
+.button li .c5 {
+    border-top:#a91b72 10px solid;
+    position:absolute;
+    background-color:#a91b72;
+    width:134px;
+    z-index:1
+}
+.button li .c6 {
+    border-top:#644b97 10px solid;
+    position:absolute;
+    background-color:#644b97;
+    width:134px;
+    z-index:1
+}
+.button li .c7 {
+    border-top:#047cca 10px solid;
+    position:absolute;
+    background-color:#047cca;
+    width:134px;
+    z-index:1
+}
+.button li .d1, .d2, .d3, .d4, .d5, .d6, .d7 {
+    border-top:#fff 10px solid;
+    position:absolute;
+    background-color:#fff;
+    width:134px;
+    z-index:2;
+    display:none
+}
+.running_bd_main {
+    width:960px;
+    margin:0 auto;
+    text-align:left
+}
+.running_bgg {
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/main_bg.png) repeat-y;
+    padding:30px 0
+}
+.running_bd_left {
+    width:634px;
+    float:left
+}
+.running_bd_right {
+    width:317px;
+    float:right
+}
+p {
+    margin:0
+}
+.ul_lst li {
+    height:24px
+}
+.ul_lst li a {
+    color:#252525;
+    padding-left:14px;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 0 -63px
+}
+.running_bd a:hover {
+    color:#ba2636
+}
+.running_bd_main_01 {
+    border-top:1px #e5e5e5 solid;
+    border-bottom:1px #e5e5e5 solid
+}
+.running_news_lst {
+    width:590px;
+    margin-top:-20px
+}
+.running_news_row {
+    padding:20px 0;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/dotted.png) repeat-x left bottom
+}
+.running_news_row h3 {
+    margin-bottom:20px
+}
+.running_news_row h3 a {
+    color:#333;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-size:20px;
+    font-weight:bold
+}
+.running_news_img {
+    float:left;
+    width:240px;
+    height:160px;
+    overflow:hidden;
+    margin:0 30px 0 0;
+    display:inline
+}
+.running_news_img img {
+    width:240px;
+    height:160px;
+    overflow:hidden
+}
+.running_news_lst2 {
+    width:590px;
+    margin-top:-20px
+}
+.running_news_lst2 .running_news_img {
+    width:235px;
+    height:235px;
+    margin-right:35px
+}
+.running_news_lst2 .running_news_img img {
+    width:235px;
+    height:235px
+}
+.running_news_text {
+    color:#888;
+    line-height:20px
+}
+.read_detailed {
+    text-align:right;
+    padding-top:5px
+}
+.read_detailed a {
+    color:#888;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 100% 0;
+    padding-right:20px
+}
+.running_news_ft {
+    text-align:right;
+    margin-top:30px;
+    width:590px
+}
+a.read_all_btn:link, a.read_all_btn:visited, a.read_all_btn:hover, a.read_all_btn:active {
+    padding:10px 20px;
+    color:#fff;
+    font-size:16px;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    background:#60bf30;
+    text-decoration:none;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    display:inline-block
+}
+.countdown_main {
+    margin-left:20px;
+    height:120px
+}
+.countdown_main h4, .countdown_main h4 a {
+    color:#545454;
+    font-size:14px;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-weight:bold
+}
+.countdown_main p {
+    color:#999;
+    font-size:18px;
+    text-align:center;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-weight:bold;
+    margin-top:20px
+}
+.countdown_date {
+    height:54px;
+    margin:20px 0 8px 0
+}
+.countdown_date span {
+    float:left;
+    width:80px;
+    height:54px;
+    overflow:hidden;
+    line-height:54px;
+    text-align:center;
+    background:#545454;
+    margin-right:18px;
+    display:inline;
+    color:#fff;
+    font-family:Arial;
+    font-size:42px
+}
+.countdown_unit span {
+    float:left;
+    width:80px;
+    margin-right:18px;
+    color:#545454;
+    text-align:center
+}
+.event_activities {
+    width:300px;
+    margin:30px 0 0 17px
+}
+.running_title a {
+    font-size:16px;
+    font-weight:bold;
+    color:#252525;
+    font-family:\5fae\8f6f\96c5\9ed1
+}
+.event_active_lst {
+    border-top:1px #e7e7e7 solid;
+    margin-top:18px;
+    width:300px;
+    float:left
+}
+.event_active_row {
+    border-bottom:1px #e7e7e7 solid;
+    padding:15px 0;
+    width:300px;
+    float:left
+}
+.event_active_left {
+    float:left;
+    width:115px
+}
+.event_active_left em {
+    font-size:30px;
+    font-family:Arial;
+    color:#60bf30;
+    font-weight:bold
+}
+.event_active_left span {
+    color:#888
+}
+.event_active_right {
+    width:185px;
+    float:right
+}
+.event_active_right h4 {
+    margin-top:5px
+}
+.event_active_right h4 a {
+    color:#252525
+}
+.event_active_info {
+    height:15px;
+    width:185px;
+    overflow:hidden;
+    color:#888;
+    margin-top:10px
+}
+.event_active_info a {
+    color:#888
+}
+.event_active_info_fl {
+    float:left
+}
+.event_active_info_fr {
+    float:right;
+    width:60px;
+    height:15px;
+    overflow:hidden
+}
+.event_active_address {
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 0 -31px;
+    padding-left:12px
+}
+.event_activities .read_detailed {
+    padding:20px 0;
+    clear:both
+}
+.event_activities_help {
+    margin-bottom:20px;
+    height:50px
+}
+.quesiton_btn {
+    width:90px;
+    height:50px;
+    overflow:hidden;
+    line-height:500px;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/imgs.png) no-repeat -73px 0;
+    float:left
+}
+a.beginner_entry_btn:link, a.beginner_entry_btn:visited, a.beginner_entry_btn:hover, a.beginner_entry_btn:active {
+    width:200px;
+    height:50px;
+    overflow:hidden;
+    line-height:50px;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-size:24px;
+    color:#fff;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/imgs.png) no-repeat -173px 0;
+    float:right;
+    text-decoration:none;
+    text-align:center
+}
+.running_split_line {
+    height:1px;
+    background:#e7e7e7;
+    overflow:hidden
+}
+.runnning_ad {
+    margin:20px 0 20px 17px
+}
+.new_products {
+    margin:20px 0 0 17px
+}
+.new_products .ul_lst {
+    margin-top:20px
+}
+.to_join_our {
+    margin:25px 0 0 17px
+}
+.to_join_our h3 {
+    margin-bottom:20px
+}
+.running_join_our {
+    width:300px;
+    height:70px;
+    background:#f0f0f0
+}
+.running_join_our p {
+    float:left;
+    width:200px;
+    margin:10px 0 0 15px;
+    display:inline
+}
+.running_join_our a {
+    color:#252525;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-size:14px;
+    line-height:20px
+}
+.running_join_our_img {
+    float:right
+}
+.running_join_our_img img {
+    width:70px;
+    height:70px;
+    overflow:hidden
+}
+.to_join_our .ul_lst {
+    margin-top:20px
+}
+.running_bd_main_02 {
+    margin:20px auto 0 auto
+}
+.running_cell {
+    width:470px;
+    height:235px;
+    margin-bottom:18px;
+    overflow:hidden
+}
+.running_cell_left {
+    float:left
+}
+.running_cell_right {
+    float:right
+}
+.running_cell_lst {
+    padding:38px 0 0 38px
+}
+.running_cell_lst h3 {
+    margin-bottom:20px
+}
+.running_cell_lst h3 a {
+    color:#252525;
+    font-size:20px;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-weight:bold;
+    padding-right:20px;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 100% -97px
+}
+.running_cell_lst li {
+    height:33px;
+    overflow:hidden;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 0 -167px
+}
+.running_cell_lst li a {
+    padding-left:9px;
+    color:#252525
+}
+.running_cell_lst2 {
+    padding:38px 0 0 38px;
+    float:left;
+    display:inline;
+    width:197px;
+    height:197px;
+    overflow:hidden
+}
+.running_cell_lst2 h3 a {
+    color:#fff;
+    font-size:20px;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    font-weight:bold;
+    padding-right:20px;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 100% -134px
+}
+.running_cell_lst2 ul {
+    margin-top:20px
+}
+.running_cell_lst2 li {
+    height:33px;
+    width:180px;
+    overflow:hidden;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 0 -222px
+}
+.running_cell_lst2 li a {
+    padding-left:9px;
+    color:#fff
+}
+.running_cell_img {
+    float:left;
+    width:235px;
+    height:235px;
+    overflow:hidden
+}
+.running_cell_img img {
+    width:235px;
+    height:235px;
+    overflow:hidden
+}
+.running_cell_02 {
+    background:#252525
+}
+.running_cell_03 {
+    background:#252525
+}
+.running_cell_01 h3 a {
+    color:#252525;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 100% -97px
+}
+.running_cell_01 .running_cell_lst2 {
+    width:196px;
+    height:195px;
+    border:1px #e5e5e5 solid;
+    border-left:0;
+    float:left
+}
+.running_cell_01 li {
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 0 -167px
+}
+.running_cell_01 li a {
+    color:#252525
+}
+.running_cell_04 {
+    width:468px;
+    height:232px;
+    border:1px #e5e5e5 solid;
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/mod_bg.png) no-repeat
+}
+.running_cell_04 .running_cell_lst {
+    border-left:0
+}
+.running_cell_04 li {
+    width:410px
+}
+.running_bd_main_03 {
+    border-top:1px #e5e5e5 solid
+}
+.running_community h3 {
+    margin:8px 0 20px 0
+}
+.running_community h3, .running_community h3 a {
+    color:#252525;
+    font-size:20px;
+    font-weight:bold;
+    font-family:\5fae\8f6f\96c5\9ed1
+}
+.running_community_left {
+    float:left;
+    width:360px
+}
+.running_community_left img {
+    width:360px;
+    height:190px;
+    overflow:hidden
+}
+.running_community_right {
+    float:left;
+    width:274px
+}
+.running_ad {
+    margin:55px 0 0 17px;
+    width:300px
+}
+.running_community_info {
+    padding-top:13px
+}
+.running_community_info h4 {
+    float:left;
+    width:225px
+}
+.running_community_info h4 a {
+    color:#252525;
+    font-size:18px;
+    font-weight:bold;
+    font-family:\5fae\8f6f\96c5\9ed1
+}
+.running_community_from {
+    width:99px;
+    border-left:1px #ddd solid;
+    color:#888;
+    float:right;
+    padding-left:10px;
+    line-height:21px
+}
+.running_community_lst {
+    margin:0 0 0 30px
+}
+.running_community_lst li {
+    width:230px;
+    height:33px;
+    overflow:hidden
+}
+.running_community_lst a {
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/icon.png) no-repeat 0 -167px;
+    padding-left:9px;
+    color:#252525
+}
+.running_community_pic {
+    margin-left:30px
+}
+.running_community_pic li {
+    margin:0 30px 20px 0;
+    line-height:21px
+}
+.running_community_pic img {
+    float:left;
+    width:100px;
+    height:70px;
+    overflow:hidden;
+    margin-right:15px
+}
+.running_community_pic a {
+    color:#252525
+}
+.running_bd_main_04 {
+    padding-bottom:20px
+}
+.partners_split {
+    background:#60bf30;
+    height:10px;
+    overflow:hidden
+}
+.partners_title {
+    padding:20px 0
+}
+.partners_title, .partners_title a {
+    color:#252525;
+    font-size:20px;
+    font-weight:bold;
+    font-family:\5fae\8f6f\96c5\9ed1
+}
+.partners_lst {
+    width:960px;
+    overflow:hidden
+}
+.partners_img {
+    width:1000px
+}
+.partners_img li {
+    width:120px;
+    height:50px;
+    overflow:hidden;
+    float:left;
+    padding:0 20px 20px 0;
+    display:inline
+}
+.partners_img img {
+    width:120px;
+    height:50px;
+    overflow:hidden
+}
+.partners_txt {
+    width:970px
+}
+.partners_txt li {
+    padding:0 20px 20px 0;
+    float:left;
+    display:inline
+}
+.partners_txt a {
+    color:#888
+}
+.footerbg {
+    height:270px;
+    border-top:1px solid #ddd;
+    background:none repeat-x scroll 0 0 #f8f8f8;
+    text-align:left
+}
+.footer {
+    margin:0 auto;
+    width:1000px
+}
+.footer-channel {
+    width:161px;
+    float:left;
+    padding:20px 0 0 0
+}
+.footer-content {
+    float:left
+}
+.other-info {
+    padding:20px 0 20px 25px
+}
+.news-sub {
+    width:200px;
+    height:270px;
+    float:left;
+    border-left:1px solid #ddd
+}
+.other-channels {
+    width:360px;
+    height:270px;
+    float:left;
+    border-left:1px solid #ddd
+}
+.other-info {
+    float:left;
+    height:230px;
+    width:245px;
+    border-left:1px solid #ddd
+}
+.footer-module-content h3 {
+    padding:30px 0 10px 30px;
+    color:#808080;
+    font-weight:bold
+}
+.footer-module-content h3 a, .footer-module-content h3 a:visited {
+    color:#808080;
+    font-weight:bold
+}
+.footer-module-content h3 a:hover {
+    color:#ba2636
+}
+.footer-module-content p a, .footer-module-content p a:visited {
+    color:#888;
+    float:left;
+    height:28px;
+    line-height:28px;
+    padding-left:30px;
+    padding-right:30px
+}
+.footer-module-content p a:hover {
+    color:#ba2636
+}
+.hot-keys a {
+    padding:0 10px
+}
+.hot-keys span, .hot-keys a, .hot-keys a:visited {
+    color:#333;
+    line-height:28px
+}
+.hot-keys a:hover {
+    color:#ba2636
+}
+.footer-content .search-input-area {
+    width:240px;
+    background:#fff
+}
+.footer-content .top_search .textBox {
+    width:218px;
+    _width:210px
+}
+.footer-content .search-logo {
+    float:right
+}
+.passport-entry {
+    float:left;
+    padding:2px 0 0 15px
+}
+.passport-entry .weibo a {
+    background:url(http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png) no-repeat scroll 0 0 transparent;
+    display:block;
+    height:31px;
+    width:30px
+}
+.passport-entry .mail a {
+    background:url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll -40px 0 transparent;
+    display:block;
+    height:31px;
+    width:30px
+}
+.passport-entry .rss a {
+    background:url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll -80px 0 transparent;
+    display:block;
+    height:31px;
+    width:30px
+}
+.passport-entry .weibo a:hover {
+    background:url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll 0 -31px transparent
+}
+.passport-entry .mail a:hover {
+    background:url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll -40px -31px transparent
+}
+.passport-entry .rss a:hover {
+    background:url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll -80px -31px transparent
+}
+.top_search {
+    display:inline;
+    float:right;
+    margin:21px 0 9px 0
+}
+.top_search .textBox {
+    width:256px;
+    _width:250px;
+    color:#888;
+    float:left;
+    height:28px;
+    line-height:28px;
+    border:0;
+    text-indent:3px
+}
+.search-input-area {
+    width:278px;
+    height:28px;
+    background:#fff;
+    border-color:#e8e8e8;
+    border-left:1px solid #e8e8e8;
+    border-style:solid;
+    border-width:1px
+}
+.search-logo {
+    background:url("http://img6.cache.netease.com/cnews/news2012/img/search-logo.png") no-repeat scroll 0 0 transparent;
+    cursor:pointer;
+    height:28px;
+    width:22px;
+    float:right;
+    border:0
+}
+.running_top {
+    width:960px;
+    height:210px;
+    margin:0 auto;
+    text-align:left
+}
+.running_top .logo {
+    background:url(http://img1.cache.netease.com/f2e/sports/running/images/nav_tag.png) no-repeat;
+    width:123px;
+    height:77px;
+    overflow:hidden;
+    line-height:300px;
+    float:left
+}
+.running_top .logo_right {
+    float:left;
+    margin:20px 0 0 20px;
+    display:inline;
+    color:#888
+}
+.logo_right a {
+    color:#888
+}
+.logo_right a:hover {
+    color:#ba2636
+}
+.logo_right h1, .logo_right h3 {
+    font-size:28px;
+    color:#202020;
+    font-family:\5fae\8f6f\96c5\9ed1;
+    margin-top:15px
+}
+.running_top .top_search {
+    margin-top:50px
+}
+.running_top .running_nav {
+    margin-top:30px
+}
+.running_page {
+    text-align:center;
+    padding:20px 0 10px 0;
+    height:30px
+}
+.running_page a {
+    padding:7px 10px 6px 10px;
+    color:#a7a7a7;
+    background:#fff;
+    border:1px #e1e1e1 solid;
+    margin-right:4px
+}
+.running_page a:hover, .running_page a.current {
+    color:#fff;
+    background:#515151;
+    text-decoration:none
+}
+.running_page span {
+    padding:7px 10px 6px 10px;
+    border:1px solid #ccc;
+    color:#ccc;
+    background:#fff;
+    margin-right:4px
+}
+.running_infor {
+    margin:20px auto 50px auto;
+    padding-bottom:0;
+    border-top:1px solid #e5e5e5
+}
+.running_infor .event_activities {
+    margin-top:0
+}
+.running_actives {
+    margin:20px auto 50px auto;
+    padding-bottom:0;
+    border-top:1px solid #e5e5e5;
+    padding-top:0
+}
+.running_active_lst {
+    width:590px
+}
+.active_row {
+    padding:10px 0;
+    border-bottom:1px #e5e5e5 dotted;
+    color:#888
+}
+.active_row a {
+    color:#888
+}
+.active_title {
+    float:left;
+    margin-top:18px;
+    display:inline;
+    font-size:14px;
+    font-weight:bold
+}
+.active_row_right {
+    float:right;
+    margin-top:18px;
+    display:inline
+}
+.active_row_right a {
+    font-size:14px
+}

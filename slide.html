@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <title>切换模块</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <style type="text/css">
+            /* Global CSS */
+        html {overflow-y:scroll;}
+        body { margin:0; font:12px "\5B8B\4F53", sans-serif; background:#ffffff; }
+        div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p { padding:0; margin:0; }
+        table, td, tr, th { font-size:12px; }
+        li { list-style-type:none; }
+        img { vertical-align:top; border:0; }
+        ol, ul { list-style:none; }
+        h1, h2, h3, h4, h5, h6 { font-size:12px; font-weight:normal; }
+            /*table,tr,td{padding:0px;}*/
+        address, cite, code, th { font-weight:normal; font-style:normal; }
+        em{  font-style:normal; }
+        .ntes-passport a:hover { color:#ba2636; }
+        .ntes-passport a { color:#727171; }
+        .fB { font-weight:bold; }
+        .left { float:left; }
+        .right { float:right; }
+        .clearfix, .area, .header, .footer, .area-sub, .area-main { *zoom:1;}
+        .clearfix:after, .area:after, .header:after, .footer:after, .content:after, .area-sub:after, .area-main:after, .main-col-10:after, .main-col-9:after, .tab-con:after { display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:"."; }
+            /*span blank*/
+        .blankW { background:#fff; }
+        .blank3 { clear:both; height:3px; overflow:hidden; display:block; font-size:1px; }
+        .blank6 { clear:both; height:6px; overflow:hidden; display:block; font-size:1px; }
+        .blank9 { clear:both; height:9px; overflow:hidden; display:block; font-size:1px; }
+        .blank9w { background:#ffffff; clear:both; height:9px; overflow:hidden; display:block; font-size:1px; }
+        .blank12 { clear:both; height:12px; overflow:hidden; display:block; }
+        .blank15 { clear:both; height:15px; overflow:hidden; display:block; }
+        .blank20 { clear:both; height:20px; overflow:hidden; display:block; }
+            /*font css*/
+        h2.bigsize { font-family: "Microsoft YaHei", "微软雅黑", "宋体"; font-size: 18px; font-weight: bold; height:24px; line-height: 24px; margin: 7px 0 9px; overflow:hidden; }
+        h2.bigsize em { font-weight: bold; }
+        h3.bigsize { font-family: "Microsoft YaHei", "微软雅黑", "宋体"; font-size: 16px; font-weight: bold; height:24px; line-height: 24px; margin: 10px 0 6px; overflow:hidden; }
+        h3.bigsize em { font-weight: bold; }
+            /*link css*/
+        a { color:#252525; text-decoration:none; }
+        a:visited { text-decoration:none; }
+        a:hover { color:#ba2636; text-decoration:underline; }
+        a:active { color:#ba2636; }
+        .more a:hover { color: #BA2636; }
+        .more a, .more a:visited { color:#888; }
+            /*colors*/
+        .cLGray { color:#dddddd; }
+        .cDGray { color:#c1c1c1; }
+        .cgray { background: url("http://img2.cache.netease.com/cnews/news2012/img/nav-border.png") no-repeat scroll 0 0 transparent; height: 12px; width: 1px; }
+        .cDRed,.cDRed:visited,.cDRed a{color:#ba2636;}
+        .cDRed a:hover,a.cDRed:hover{color:#ba2636;}
+            /*slide*/
+        .area { clear: both; margin: 0px auto; width: 960px; }
+        .area-main { float: left; width: 400px; }
+            /*slide*/
+        .area-sub { float: right; width: 560px; }
+        .imgList-widget-4 { padding-top: 5px; }
+        .imgList-widget-4 li { float: left; width: 220px; padding-top: 10px; position: relative; }
+        .imgList-widget-4 .img-bg { background-color: #050505; display: block; height: 30px; left: 0px; opacity: 0.6;filter:alpha(opacity=60);  position: absolute; top: 130px; width: 220px; }
+        .imgList-widget-4 p { height: 30px; left: 0px; line-height: 30px; position: absolute; top: 132px; }
+        .imgList-widget-4 p a,.imgList-widget-4 p a:hover,.imgList-widget-4 p a:visited { color:  #FFFFFF; font-size: 12px; font-weight: bold; height: 30px; overflow: hidden; padding-left: 10px; text-decoration: none; }
+        .widget-slide-content-text { padding: 10px; width: 140px; }
+        .widget-slide-content-text h4 { line-height: 25px; padding-bottom: 5px; overflow: hidden; font-family: "Microsoft YaHei","微软雅黑"; font-size: 17px; font-weight: bold; text-align: left; }
+        .widget-slide h4 a:link,.widget-slide h4 a:visited { color:#4e4e4e; }
+        .widget-slide h4 a:hover { color: #BA2636; }
+        .widget-slide-content-text p{ color: #888888; line-height: 21px; padding-top: 12px; clear: both; }
+            /*.widget-slide-ctrl { position: absolute; }*/
+        .widget-slide-ctrl div,.widget-slide-ctrl-tabs li { display: inline; float: left; }
+        .widget-slide-ctrl-tabs { bottom: 12px; margin: 0px 16px; overflow: hidden; position: absolute; width: 370px; visibility: hidden; }
+        .widget-slide-ctrl-tabs ul { overflow: hidden; width: 9999px; }
+        .widget-slide-ctrl-tabs li { width: 62px; }
+        .widget-slide-ctrl-tabs img { border: 2px solid #a7a5af; opacity: 0.8;filter:alpha(opacity=80); padding: 0px; }
+        .widget-slide-ctrl-tabs .current img{ border: 2px solid #2db3e9; opacity: 1; filter:alpha(opacity=100);padding: 0px; }
+        .widget-slide { margin-bottom: 10px;  overflow: hidden; position: relative; }
+        .widget-slide-body { overflow: hidden; position: relative; }
+        .widget-slide-1 { width:220px;height:165px;padding-top: 20px;}
+        .widget-slide-2 .widget-slide-body { height: 280px; overflow: hidden;  width: 560px; background: none repeat scroll 0px 0px #F3F3F3; }
+
+        .widget-slide .widget-slide-contents-piclist { width: 9999px; }
+        .widget-slide-contents-piclist li { float: left; position: relative; width: 560px; }
+        .widget-slide-ctrl .widget-slide-ctrl-tabs li { display: inline; float: left; }
+        .widget-slide-ctrl .widget-slide-ctrl-nav { display: inline-block; position: absolute; text-align: center; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-nav { width: 160px; bottom: 20px; left: 400px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-nav { width: 160px; bottom: 160px; left: 110px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-nav { width: 160px; bottom: -3px; left: 110px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-nav {  bottom: 270px;
+            right: 0;
+            width: 160px; }
+        .widget-slide-ctrl-nav li { background: url("http://img2.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll 0 -191px transparent; cursor: pointer; display: inline-block; *display:inline;zoom:1; height: 9px; width: 8px; padding:0 3px; }
+        .widget-slide-ctrl-nav .current{ background: url("http://img2.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll 0px -169px transparent; }
+        .widget-slide-ctrl-prev,.widget-slide-ctrl-next { background-color: #333333;color: #FFFFFF; display: inline-block; font-weight: bold; opacity: 0.6;    filter:alpha(opacity=60); position: absolute; text-align: center; text-decoration: none; }
+        .widget-slide-ctrl-prev:hover, .widget-slide-ctrl-next:hover { background-color:#000; color:#fff; opacity: 0.8; filter:alpha(opacity=80); text-decoration:none; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-prev,.widget-slide-1-ctrl .widget-slide-ctrl-next { border-radius: 21px 21px 21px 21px; bottom: 112px; font-size: 36px; height: 42px; line-height: 42px; width: 42px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-prev,.widget-slide-2-ctrl .widget-slide-ctrl-next { border-radius: 12px 12px 12px 12px; bottom: 70px; height: 24px; line-height: 24px; font-size: 20px; width: 24px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-prev,.widget-slide-3-ctrl .widget-slide-ctrl-next { border-radius: 20px; bottom: 150px; height: 40px; line-height: 40px; font-size: 28px; width: 40px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-prev,.widget-slide-4-ctrl .widget-slide-ctrl-next { border-radius: 20px; bottom: 150px; height: 40px; line-height: 40px; font-size: 28px; width: 40px; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-prev { left: 15px; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-next { left: 340px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-prev { left: 10px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-next { left: 185px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-prev { left: 10px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-next { left: 310px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-prev { left: 0px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-next { left: 920px; }
+        .widget-slide .ui-til4{ bottom: 160px; position: absolute;}
+        .widget-slide-3 .widget-slide-body { height: 285px;overflow: hidden; width: 360px; }
+        .imgList-widget-8 li { float: left; width: 360px; position:relative; }
+        .imgList-widget-8 .img-bg { background-color: #050505; display: block; height: 60px; left: 0; opacity: 0.6; filter:alpha(opacity=60); position: absolute; bottom:1px; width: 400px; }
+        .imgList-widget-8 .title-info { height: 60px; left: 0; line-height: 60px; position: absolute; bottom:0; }
+        .imgList-widget-8 .title-info h4 { height: 26px; line-height: 26px; padding-top: 5px; font-weight:bold; font-size:14px; }
+        .imgList-widget-8 .title-info p { height: 24px; line-height: 24px; font-size: 12px; }
+        .imgList-widget-8 h4 a, .imgList-widget-8 h4 a:hover, .imgList-widget-8 h4 a:visited { color: #FFFFFF; }
+        .imgList-widget-8 p a, .imgList-widget-8 p a:hover, .imgList-widget-8 p a:visited { color:#b4b6b9; }
+        .imgList-widget-8 h4 a, .imgList-widget-8 p a, .imgList-widget-8 h4 a:hover, .imgList-widget-8 p a:hover, .imgList-widget-8 h4 a:visited, .imgList-widget-8 p a:visited { height: 30px; overflow: hidden; padding-left: 10px; text-decoration: none; }
+        .imgList-widget-3 li {
+            float: left;
+            padding-left: 12px;
+            padding-right: 5px;
+            padding-top: 10px;
+            width: 220px;
+        }
+        .imgList-widget-3 li img { margin-bottom: 5px; }
+
+        .widget-slide-4 {
+            height: 230px;
+            padding-top: 65px;
+            width: 960px;
+        }
+        .title-bar h2 {
+            float: left;
+            font-weight: bold;
+            line-height: 29px;
+        }
+        .ui-til1 h2 {
+            border-bottom: 5px solid #333333;
+            float: left;
+            font-family: "Microsoft YaHei","微软雅黑";
+            font-size: 16px;
+            height: 38px;
+            line-height: 37px;
+            overflow: hidden;
+            width: 239px;
+        }
+        .ui-til1 .links {
+            border-bottom: 5px solid #044C82;
+            height: 38px;
+            line-height: 37px;
+            width: 720px;
+        }
+        .ui-til1 { height:43px; line-height:43px; }
+        .ui-til1 h2 { float: left; font-family: "Microsoft YaHei", "微软雅黑"; font-size: 16px; width:239px; height:38px; line-height:37px; border-bottom: 5px solid #333; overflow: hidden; }
+        .ui-til1 .links { width:720px; height: 38px; line-height: 37px; border-bottom: 5px solid #044c82; }
+        .ui-til1 .links .more { padding-top:7px; color:#ddd; }
+        .ui-til1 .more a { font-size:14px; color:#252525; padding:0 15px; border-right: 1px solid #ddd; }
+        .ui-til1 .more a.last { padding-right: 9px; border-right:0; }
+        .ui-til1 .more a:visited { color:#252525; }
+        .ui-til1 .more a.current:visited { color: #F1F1F1; }
+        .ui-til1 .more .current, .ui-til1 .more a:hover { text-decoration: none; color:#f1f1f1; background:#373737; padding:5px 18px; -webkit-border-radius:13px; -moz-border-radius:13px; border-radius: 13px; margin: 0 -2px 0 -3px; position: relative; border-right:0; }
+        .ui-til1 .more a.last:hover { padding-right: 9px; margin: 0 0 0 -3px; -webkit-border-radius:13px 0 0 13px; -moz-border-radius:13px 0 0 13px; border-radius:  13px 0 0 13px; }
+        .ui-til2 { padding-bottom:9px; padding-top:12px; }
+    </style>
+</head>
+<body>
+<span class="blank12"></span>
+<span class="blank12"></span>
+<div class="area">
+    <div class="area-main">
+        <div class="mod">
+            <div class="widget-slide widget-slide-3">
+                <div class="widget-slide-body"  >
+                    <ul class="imgList-widget-8">
+                        <li class="" id="eq"><a href="http://v.163.com/special/zongyisubject/yaochencaoyu.html?v_news"><img width="360" height="260" src="http://img3.cache.netease.com/cnews/2012/11/19/20121119100042d159e.jpg"  title="姚晨曹郁在新西兰大婚" alt="姚晨曹郁在新西兰大婚"></a>
+                            <a class="img-bg" href="http://v.163.com/special/zongyisubject/yaochencaoyu.html"></a>
+                            <div class="title-info">
+                                <h4><a href="http://v.163.com/special/zongyisubject/yaochencaoyu.html?v_news">姚晨曹郁在新西兰大婚</a></h4>
+                                <p><a href="http://v.163.com/special/zongyisubject/yaochencaoyu.html?v_news">当地时间17日，姚晨与曹郁将于新西兰皇后镇完婚。</a></p>
+                            </div>
+                        </li>
+                        <li class=""><a href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH?v_news"><img width="360" height="260" src="http://img3.cache.netease.com/cnews/2012/11/19/201211191347083df08.jpg"  title="挑战狂人：德国摇滚教父为“小比伯”疯狂" alt="挑战狂人：德国摇滚教父为“小比伯”疯狂"></a>
+                            <a class="img-bg" href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH"></a>
+                            <div class="title-info">
+                                <h4><a href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH?v_news">挑战狂人：德国摇滚教父为“小比伯”疯狂</a></h4>
+                                <p><a href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH?v_news">“小比伯”熟识AC/DC乐队的100首歌曲，现场演奏high爆全场。</a></p>
+                            </div>
+                        </li>
+                        <li class="current last"><a href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html?v_news"><img width="360" height="260" src="http://img2.cache.netease.com/video/2012/11/21/2012112110150120ce2.jpg"  title="迷魅金星：变性后的我重获新生" alt="迷魅金星：变性后的我重获新生"></a>
+                            <a class="img-bg" href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html"></a>
+                            <div class="title-info">
+                                <h4><a href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html?v_news">迷魅金星：变性后的我重获新生</a></h4>
+                                <p><a href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html?v_news">金星获奖无数，但这些都比不上性别上的改变让她满足</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget-slide-ctrl widget-slide-3-ctrl">
+                    <a href="" class="widget-slide-ctrl-prev" >&lt;</a>
+                    <ul class="widget-slide-ctrl-nav">
+                        <li></li><li></li><li></li></ul>
+                    <a href="" class="widget-slide-ctrl-next">&gt;</a>
+                </div>
+            </div>
+            <span class="blank6"></span>
+            <!--右侧广告-->
+        </div>
+    </div>
+</div>
+<script type="text/javascript"  language="javascript" src="http://img1.cache.netease.com/cnews/js/ntes_jslib_1.x.js" charset="gb2312"></script>
+<script type="text/javascript" src="js/pub/ntes_ui_slide.js"></script>
+<!--<script type="text/javascript" charset="gb2312" src="js/ntes_ui_scroll.js"></script>-->
+<!--<script type="text/javascript" charset="gb2312" src="js/ntes_ui_slide.js"></script>-->
+<script type="text/javascript">
+    /*
+     * 调用与执行
+     * */
+    var _target = $(".widget-slide"),
+            _cons = $(".imgList-widget-8 > li", _target),
+            _ctrls = $(".widget-slide-ctrl-nav > li", _target),
+            _prev = $(".widget-slide-ctrl-prev", _target),
+            _next = $(".widget-slide-ctrl-next", _target);
+
+    new $.ui.Carousel( _ctrls ,_cons , "current" , { prev : _prev , next : _next ,event: "click", auto: true, interval:1000 , gap: 8000 });
+</script>
+<style type="text/css">
+    .imgList-widget-8 li  {
+        display: none;
+        overflow: hidden;
+    }
+    .imgList-widget-8 li.current {
+        display: block;
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <title>切换模块</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <style type="text/css">
+            /* Global CSS */
+        html {overflow-y:scroll;}
+        body { margin:0; font:12px "\5B8B\4F53", sans-serif; background:#ffffff; }
+        div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, p { padding:0; margin:0; }
+        table, td, tr, th { font-size:12px; }
+        li { list-style-type:none; }
+        img { vertical-align:top; border:0; }
+        ol, ul { list-style:none; }
+        h1, h2, h3, h4, h5, h6 { font-size:12px; font-weight:normal; }
+            /*table,tr,td{padding:0px;}*/
+        address, cite, code, th { font-weight:normal; font-style:normal; }
+        em{  font-style:normal; }
+        .ntes-passport a:hover { color:#ba2636; }
+        .ntes-passport a { color:#727171; }
+        .fB { font-weight:bold; }
+        .left { float:left; }
+        .right { float:right; }
+        .clearfix, .area, .header, .footer, .area-sub, .area-main { *zoom:1;}
+        .clearfix:after, .area:after, .header:after, .footer:after, .content:after, .area-sub:after, .area-main:after, .main-col-10:after, .main-col-9:after, .tab-con:after { display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:"."; }
+            /*span blank*/
+        .blankW { background:#fff; }
+        .blank3 { clear:both; height:3px; overflow:hidden; display:block; font-size:1px; }
+        .blank6 { clear:both; height:6px; overflow:hidden; display:block; font-size:1px; }
+        .blank9 { clear:both; height:9px; overflow:hidden; display:block; font-size:1px; }
+        .blank9w { background:#ffffff; clear:both; height:9px; overflow:hidden; display:block; font-size:1px; }
+        .blank12 { clear:both; height:12px; overflow:hidden; display:block; }
+        .blank15 { clear:both; height:15px; overflow:hidden; display:block; }
+        .blank20 { clear:both; height:20px; overflow:hidden; display:block; }
+            /*font css*/
+        h2.bigsize { font-family: "Microsoft YaHei", "微软雅黑", "宋体"; font-size: 18px; font-weight: bold; height:24px; line-height: 24px; margin: 7px 0 9px; overflow:hidden; }
+        h2.bigsize em { font-weight: bold; }
+        h3.bigsize { font-family: "Microsoft YaHei", "微软雅黑", "宋体"; font-size: 16px; font-weight: bold; height:24px; line-height: 24px; margin: 10px 0 6px; overflow:hidden; }
+        h3.bigsize em { font-weight: bold; }
+            /*link css*/
+        a { color:#252525; text-decoration:none; }
+        a:visited { text-decoration:none; }
+        a:hover { color:#ba2636; text-decoration:underline; }
+        a:active { color:#ba2636; }
+        .more a:hover { color: #BA2636; }
+        .more a, .more a:visited { color:#888; }
+            /*colors*/
+        .cLGray { color:#dddddd; }
+        .cDGray { color:#c1c1c1; }
+        .cgray { background: url("http://img6.cache.netease.com/cnews/news2012/img/nav-border.png") no-repeat scroll 0 0 transparent; height: 12px; width: 1px; }
+        .cDRed,.cDRed:visited,.cDRed a{color:#ba2636;}
+        .cDRed a:hover,a.cDRed:hover{color:#ba2636;}
+            /*slide*/
+        .area { clear: both; margin: 0px auto; width: 960px; }
+        .area-main { float: left; width: 400px; }
+            /*slide*/
+        .area-sub { float: right; width: 560px; }
+        .imgList-widget-4 { padding-top: 5px; }
+        .imgList-widget-4 li { float: left; width: 220px; padding-top: 10px; position: relative; }
+        .imgList-widget-4 .img-bg { background-color: #050505; display: block; height: 30px; left: 0px; opacity: 0.6;filter:alpha(opacity=60);  position: absolute; top: 130px; width: 220px; }
+        .imgList-widget-4 p { height: 30px; left: 0px; line-height: 30px; position: absolute; top: 132px; }
+        .imgList-widget-4 p a,.imgList-widget-4 p a:hover,.imgList-widget-4 p a:visited { color:  #FFFFFF; font-size: 12px; font-weight: bold; height: 30px; overflow: hidden; padding-left: 10px; text-decoration: none; }
+        .widget-slide-content-text { padding: 10px; width: 140px; }
+        .widget-slide-content-text h4 { line-height: 25px; padding-bottom: 5px; overflow: hidden; font-family: "Microsoft YaHei","微软雅黑"; font-size: 17px; font-weight: bold; text-align: left; }
+        .widget-slide h4 a:link,.widget-slide h4 a:visited { color:#4e4e4e; }
+        .widget-slide h4 a:hover { color: #BA2636; }
+        .widget-slide-content-text p{ color: #888888; line-height: 21px; padding-top: 12px; clear: both; }
+            /*.widget-slide-ctrl { position: absolute; }*/
+        .widget-slide-ctrl div,.widget-slide-ctrl-tabs li { display: inline; float: left; }
+        .widget-slide-ctrl-tabs { bottom: 12px; margin: 0px 16px; overflow: hidden; position: absolute; width: 370px; visibility: hidden; }
+        .widget-slide-ctrl-tabs ul { overflow: hidden; width: 9999px; }
+        .widget-slide-ctrl-tabs li { width: 62px; }
+        .widget-slide-ctrl-tabs img { border: 2px solid #a7a5af; opacity: 0.8;filter:alpha(opacity=80); padding: 0px; }
+        .widget-slide-ctrl-tabs .current img{ border: 2px solid #2db3e9; opacity: 1; filter:alpha(opacity=100);padding: 0px; }
+        .widget-slide { margin-bottom: 10px;  overflow: hidden; position: relative; }
+        .widget-slide-body { overflow: hidden; position: relative; }
+        .widget-slide-1 { width:220px;height:165px;padding-top: 20px;}
+        .widget-slide-2 .widget-slide-body { height: 280px; overflow: hidden;  width: 560px; background: none repeat scroll 0px 0px #F3F3F3; }
+
+        .widget-slide .widget-slide-contents-piclist { width: 9999px; }
+        .widget-slide-contents-piclist li { float: left; position: relative; width: 560px; }
+        .widget-slide-ctrl .widget-slide-ctrl-tabs li { display: inline; float: left; }
+        .widget-slide-ctrl .widget-slide-ctrl-nav { display: inline-block; position: absolute; text-align: center; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-nav { width: 160px; bottom: 20px; left: 400px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-nav { width: 160px; bottom: 160px; left: 110px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-nav { width: 160px; bottom: -3px; left: 110px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-nav {  bottom: 270px;
+            right: 0;
+            width: 160px; }
+        .widget-slide-ctrl-nav li { background: url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll 0 -191px transparent; cursor: pointer; display: inline-block; *display:inline;zoom:1; height: 9px; width: 8px; padding:0 3px; }
+        .widget-slide-ctrl-nav .current{ background: url("http://img6.cache.netease.com/cnews/news2012/img/icons-sprites.png") no-repeat scroll 0px -169px transparent; }
+        .widget-slide-ctrl-prev,.widget-slide-ctrl-next { background-color: #333333;color: #FFFFFF; display: inline-block; font-weight: bold; opacity: 0.6;    filter:alpha(opacity=60); position: absolute; text-align: center; text-decoration: none; visibility: hidden; }
+        .widget-slide-ctrl-prev:hover, .widget-slide-ctrl-next:hover { background-color:#000; color:#fff; opacity: 0.8; filter:alpha(opacity=80); text-decoration:none; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-prev,.widget-slide-1-ctrl .widget-slide-ctrl-next { border-radius: 21px 21px 21px 21px; bottom: 112px; font-size: 36px; height: 42px; line-height: 42px; width: 42px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-prev,.widget-slide-2-ctrl .widget-slide-ctrl-next { border-radius: 12px 12px 12px 12px; bottom: 70px; height: 24px; line-height: 24px; font-size: 20px; width: 24px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-prev,.widget-slide-3-ctrl .widget-slide-ctrl-next { border-radius: 20px; bottom: 150px; height: 40px; line-height: 40px; font-size: 28px; width: 40px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-prev,.widget-slide-4-ctrl .widget-slide-ctrl-next { border-radius: 20px; bottom: 150px; height: 40px; line-height: 40px; font-size: 28px; width: 40px; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-prev { left: 15px; }
+        .widget-slide-1-ctrl .widget-slide-ctrl-next { left: 340px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-prev { left: 10px; }
+        .widget-slide-2-ctrl .widget-slide-ctrl-next { left: 185px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-prev { left: 10px; }
+        .widget-slide-3-ctrl .widget-slide-ctrl-next { left: 310px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-prev { left: 0px; }
+        .widget-slide-4-ctrl .widget-slide-ctrl-next { left: 920px; }
+        .widget-slide .ui-til4{ bottom: 160px; position: absolute;}
+        .widget-slide-3 .widget-slide-body { height: 285px;overflow: hidden; width: 360px; }
+        .imgList-widget-8 li { float: left; width: 360px; position:relative; }
+        .imgList-widget-8 .img-bg { background-color: #050505; display: block; height: 60px; left: 0; opacity: 0.6; filter:alpha(opacity=60); position: absolute; bottom:1px; width: 400px; }
+        .imgList-widget-8 .title-info { height: 60px; left: 0; line-height: 60px; position: absolute; bottom:0; }
+        .imgList-widget-8 .title-info h4 { height: 26px; line-height: 26px; padding-top: 5px; font-weight:bold; font-size:14px; }
+        .imgList-widget-8 .title-info p { height: 24px; line-height: 24px; font-size: 12px; }
+        .imgList-widget-8 h4 a, .imgList-widget-8 h4 a:hover, .imgList-widget-8 h4 a:visited { color: #FFFFFF; }
+        .imgList-widget-8 p a, .imgList-widget-8 p a:hover, .imgList-widget-8 p a:visited { color:#b4b6b9; }
+        .imgList-widget-8 h4 a, .imgList-widget-8 p a, .imgList-widget-8 h4 a:hover, .imgList-widget-8 p a:hover, .imgList-widget-8 h4 a:visited, .imgList-widget-8 p a:visited { height: 30px; overflow: hidden; padding-left: 10px; text-decoration: none; }
+        .imgList-widget-3 li {
+            float: left;
+            padding-left: 12px;
+            padding-right: 5px;
+            padding-top: 10px;
+            width: 220px;
+        }
+        .imgList-widget-3 li img { margin-bottom: 5px; }
+
+        .widget-slide-4 {
+            height: 230px;
+            padding-top: 65px;
+            width: 960px;
+        }
+        .title-bar h2 {
+            float: left;
+            font-weight: bold;
+            line-height: 29px;
+        }
+        .ui-til1 h2 {
+            border-bottom: 5px solid #333333;
+            float: left;
+            font-family: "Microsoft YaHei","微软雅黑";
+            font-size: 16px;
+            height: 38px;
+            line-height: 37px;
+            overflow: hidden;
+            width: 239px;
+        }
+        .ui-til1 .links {
+            border-bottom: 5px solid #044C82;
+            height: 38px;
+            line-height: 37px;
+            width: 720px;
+        }
+        .ui-til1 { height:43px; line-height:43px; }
+        .ui-til1 h2 { float: left; font-family: "Microsoft YaHei", "微软雅黑"; font-size: 16px; width:239px; height:38px; line-height:37px; border-bottom: 5px solid #333; overflow: hidden; }
+        .ui-til1 .links { width:720px; height: 38px; line-height: 37px; border-bottom: 5px solid #044c82; }
+        .ui-til1 .links .more { padding-top:7px; color:#ddd; }
+        .ui-til1 .more a { font-size:14px; color:#252525; padding:0 15px; border-right: 1px solid #ddd; }
+        .ui-til1 .more a.last { padding-right: 9px; border-right:0; }
+        .ui-til1 .more a:visited { color:#252525; }
+        .ui-til1 .more a.current:visited { color: #F1F1F1; }
+        .ui-til1 .more .current, .ui-til1 .more a:hover { text-decoration: none; color:#f1f1f1; background:#373737; padding:5px 18px; -webkit-border-radius:13px; -moz-border-radius:13px; border-radius: 13px; margin: 0 -2px 0 -3px; position: relative; border-right:0; }
+        .ui-til1 .more a.last:hover { padding-right: 9px; margin: 0 0 0 -3px; -webkit-border-radius:13px 0 0 13px; -moz-border-radius:13px 0 0 13px; border-radius:  13px 0 0 13px; }
+        .ui-til2 { padding-bottom:9px; padding-top:12px; }
+    </style>
+    <script charset="gb2312" src="http://img6.cache.netease.com/cnews/js/ntes_jslib_1.x.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<span class="blank12"></span>
+<span class="blank12"></span>
+<div class="area">
+    <span class="blank12"></span>
+    <div class="widget-slide widget-slide-4">
+        <div class="widget-slide-body"  >
+            <ul class="imgList-widget-3">
+                <li class=""><a href="http://news.163.com/photoview/00AP0001/29427.html"><img width="220" height="150" src="http://img1.cache.netease.com/cnews/2012/11/20/20121120224151a1d21.jpg" alt="武汉殡葬博览会现遗体spa服务" title="武汉殡葬博览会现遗体spa服务"></a>
+                    <p><a href="http://news.163.com/photoview/00AP0001/29427.html">武汉殡葬博览会现遗体spa服务</a></p>
+                </li>
+                <li class=""><a href="http://news.163.com/photoview/00AN0001/29425.html"><img width="220" height="150" src="http://img6.cache.netease.com/cnews/2012/11/20/20121120224129326ce.jpg" alt="山东滨州一废弃油井井喷染黑数十亩土地" title="山东滨州一废弃油井井喷染黑数十亩土地"></a>
+                    <p><a href="http://news.163.com/photoview/00AN0001/29425.html">山东滨州一废弃油井井喷染黑数十亩土地</a></p>
+                </li>
+                <li class=""><a href="http://news.163.com/photoview/00AP0001/29426.html"><img width="220" height="150" src="http://img3.cache.netease.com/cnews/2012/11/20/20121120224103ccaf1.jpg" alt="江苏南通“错位楼”遭吐槽" title="江苏南通“错位楼”遭吐槽"></a>
+                    <p><a href="http://news.163.com/photoview/00AP0001/29426.html">江苏南通“错位楼”遭吐槽</a></p>
+                </li>
+                <li class=""><a href="http://news.163.com/photoview/00AP0001/29423.html"><img width="220" height="150" src="http://img2.cache.netease.com/cnews/2012/11/20/2012112022404647401.jpg" alt="多辆开国元勋座驾亮相济南" title="多辆开国元勋座驾亮相济南"></a>
+                    <p><a href="http://news.163.com/photoview/00AP0001/29423.html">多辆开国元勋座驾亮相济南</a></p>
+                </li>
+                <li class=""><a href="http://news.163.com/photoview/00AO0001/29415.html"><img width="220" height="150" src="http://img2.cache.netease.com/cnews/2012/11/20/20121120112235d6e5a.jpg" alt="美国男子上演真人版“飞屋环游记”" title="美国男子上演真人版“飞屋环游记”"></a>
+                    <p><a href="http://news.163.com/photoview/00AO0001/29415.html">美国男子上演真人版“飞屋环游记”</a></p>
+                </li>
+                <li class=""><a href="http://news.163.com/photoview/00AO0001/29413.html"><img width="220" height="150" src="http://img3.cache.netease.com/cnews/2012/11/20/20121120112217083a3.jpg" alt="以色列空袭炸死巴勒斯坦一家11人" title="以色列空袭炸死巴勒斯坦一家11人"></a>
+                    <p><a href="http://news.163.com/photoview/00AO0001/29413.html">以色列空袭炸死巴勒斯坦一家11人</a></p>
+                </li>
+                <li class=""><a href="http://news.163.com/photoview/00AP0001/29412.html"><img width="220" height="150" src="http://img4.cache.netease.com/cnews/2012/11/20/2012112009144851279.jpg" alt="贵州5名闷死男童事发垃圾箱曝光" title="贵州5名闷死男童事发垃圾箱曝光"></a>
+                    <p><a href="http://news.163.com/photoview/00AP0001/29412.html">贵州5名闷死男童事发垃圾箱曝光</a></p>
+                </li>
+                <li class="last"><a href="http://news.163.com/photoview/00AP0001/29405.html"><img width="220" height="150" src="http://img6.cache.netease.com/cnews/2012/11/20/2012112009040497113.jpg" alt="运猪车侧翻 小伙高速路捉猪" title="运猪车侧翻 小伙高速路捉猪"></a>
+                    <p><a href="http://news.163.com/photoview/00AP0001/29405.html">运猪车侧翻 小伙高速路捉猪</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="title-bar ui-til1" style="  bottom: 250px;
+    position: absolute;"><h2><img width="120" height="30" src="http://img3.cache.netease.com/cnews/temp/img/news-pics.png" alt="新闻图集"></h2>
+            <div class="links right">        </div>
+        </div>
+        <div class="widget-slide-ctrl widget-slide-4-ctrl">
+            <a href="" class="widget-slide-ctrl-prev" >&lt;</a>
+            <ul class="widget-slide-ctrl-nav">
+                <li class="current"></li><li></li></ul>
+            <a href="" class="widget-slide-ctrl-next">&gt;</a>
+        </div>
+    </div>
+</div>
+<span class="blank20"></span>
+
+<div class="area">
+    <div class="area-sub">
+        <div class="mod">
+            <div class="widget-slide widget-slide-1">
+                <div class="widget-slide-body"  >
+                    <ul class="imgList-widget-4  clearfix">
+                        <li class=""><a href="http://lady.163.com/photoview/4CJ80026/32435.html#p=8F0J7TQR4CJ80026"><img width="220" height="150" alt="“圆脸美女”濒临绝种危机" title="“圆脸美女”濒临绝种危机" src="http://img3.cache.netease.com/lady/2012/10/30/20121030003430ab51c.jpg"></a>
+                            <a href="http://lady.163.com/photoview/4CJ80026/32435.html#p=8F0J7TQR4CJ80026" class="img-bg"></a>
+                            <p><a href="http://lady.163.com/photoview/4CJ80026/32435.html#p=8F0J7TQR4CJ80026">“圆脸美女”濒临绝种危机</a></p>
+                        </li>
+                        <li class=""><a href="http://fashion.163.com/photoview/25A20026/32454.html#p=8F0KJSGL25A20026"><img width="220" height="150" alt="盘点那些跳过骑马舞的明星" title="盘点那些跳过骑马舞的明星" src="http://img3.cache.netease.com/lady/2012/10/30/20121030003459130be.jpg"></a>
+                            <a href="http://fashion.163.com/photoview/25A20026/32454.html#p=8F0KJSGL25A20026" class="img-bg"></a>
+                            <p><a href="http://fashion.163.com/photoview/25A20026/32454.html#p=8F0KJSGL25A20026">盘点那些跳过骑马舞的明星</a></p>
+                        </li>
+                        <li class="last"><a href="http://fashion.163.com/photoview/25A20026/32448.html#p=8F0IIBM125A20026"><img width="220" height="150" alt="耀眼亮片装 寒秋街头很明媚" title="耀眼亮片装 寒秋街头很明媚" src="http://img2.cache.netease.com/lady/2012/10/30/201210300035355330f.jpg"></a>
+                            <a href="http://fashion.163.com/photoview/25A20026/32448.html#p=8F0IIBM125A20026" class="img-bg"></a>
+                            <p><a href="http://fashion.163.com/photoview/25A20026/32448.html#p=8F0IIBM125A20026">耀眼亮片装 寒秋街头很明媚</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget-slide-ctrl widget-slide-2-ctrl">
+                    <a href="" class="widget-slide-ctrl-prev" >&lt;</a>
+                    <ul class="widget-slide-ctrl-nav" id="widget-slide-tab-nav">
+                        <li></li><li class="current"></li><li></li></ul>
+                    <a href="" class="widget-slide-ctrl-next" >&gt;</a>
+                </div>
+            </div>
+            <span class="blank6"></span>
+            <!--右侧广告-->
+
+        </div>
+    </div>
+</div>
+
+<span class="blank12"></span>
+<div class="area">
+    <div class="area-sub">
+        <div class="mod">
+            <div class="widget-slide widget-slide-1">
+                <div class="widget-slide-body"  >
+                    <ul class="imgList-widget-4  clearfix">
+                        <li class=""><a href="http://lady.163.com/photoview/4CJ80026/32435.html#p=8F0J7TQR4CJ80026"><img width="220" height="150" alt="“圆脸美女”濒临绝种危机" title="“圆脸美女”濒临绝种危机" src="http://img3.cache.netease.com/lady/2012/10/30/20121030003430ab51c.jpg"></a>
+                            <a href="http://lady.163.com/photoview/4CJ80026/32435.html#p=8F0J7TQR4CJ80026" class="img-bg"></a>
+                            <p><a href="http://lady.163.com/photoview/4CJ80026/32435.html#p=8F0J7TQR4CJ80026">“圆脸美女”濒临绝种危机</a></p>
+                        </li>
+                        <li class=""><a href="http://fashion.163.com/photoview/25A20026/32454.html#p=8F0KJSGL25A20026"><img width="220" height="150" alt="盘点那些跳过骑马舞的明星" title="盘点那些跳过骑马舞的明星" src="http://img3.cache.netease.com/lady/2012/10/30/20121030003459130be.jpg"></a>
+                            <a href="http://fashion.163.com/photoview/25A20026/32454.html#p=8F0KJSGL25A20026" class="img-bg"></a>
+                            <p><a href="http://fashion.163.com/photoview/25A20026/32454.html#p=8F0KJSGL25A20026">盘点那些跳过骑马舞的明星</a></p>
+                        </li>
+                        <li class="last"><a href="http://fashion.163.com/photoview/25A20026/32448.html#p=8F0IIBM125A20026"><img width="220" height="150" alt="耀眼亮片装 寒秋街头很明媚" title="耀眼亮片装 寒秋街头很明媚" src="http://img2.cache.netease.com/lady/2012/10/30/201210300035355330f.jpg"></a>
+                            <a href="http://fashion.163.com/photoview/25A20026/32448.html#p=8F0IIBM125A20026" class="img-bg"></a>
+                            <p><a href="http://fashion.163.com/photoview/25A20026/32448.html#p=8F0IIBM125A20026">耀眼亮片装 寒秋街头很明媚</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title-bar ui-til4">
+                    <h2 class="left"><a href="http://discovery.163.com/special/00013ER0/discoveryPictures.html">探索图片</a></h2>
+                </div>
+                <div class="widget-slide-ctrl widget-slide-2-ctrl">
+                    <a href="" class="widget-slide-ctrl-prev" >&lt;</a>
+                    <ul class="widget-slide-ctrl-nav">
+                        <li></li><li class="current"></li><li></li></ul>
+                    <a href="" class="widget-slide-ctrl-next">&gt;</a>
+                </div>
+            </div>
+            <span class="blank6"></span>
+            <!--右侧广告-->
+
+        </div>
+    </div>
+</div>
+<span class="blank20"></span>
+<div class="area">
+    <div class="area-sub">
+        <div class="widget-slide widget-slide-2">
+            <div class="widget-slide-body"  >
+                <ul class="widget-slide-contents-piclist">
+                    <li><a href="http://news.163.com/photoview/00AN0001/28938.html" class="left"><img width="400" height="280" src="http://img4.cache.netease.com/cnews/2012/11/5/20121105115040e0a7a.jpg" title="直击京藏高速路风雪营救" alt="直击京藏高速路风雪营救"></a>
+                        <div class="widget-slide-content-text right">
+                            <h4><a href="http://news.163.com/photoview/00AN0001/28938.html">直击京藏高速路风雪营救</a></h4>
+                            <p>11月3日晚7时，近2000人被困在北京八达岭高速出京居庸关到水关长城段。24小时内，高速上的被困者得到营救。</p>
+                        </div>
+                    </li>
+                    <li><a href="http://news.163.com/photoview/00AH0001/28920.html" class="left"><img width="400" height="280" src="http://img2.cache.netease.com/cnews/2012/11/5/20121105080749caed1.jpg" title="《看客》特刊：奥巴马的“时代”" alt="《看客》特刊：奥巴马的“时代”"></a>
+                        <div class="widget-slide-content-text right">
+                            <h4><a href="http://news.163.com/photoview/00AH0001/28920.html">《看客》特刊：奥巴马的“时代”</a></h4>
+                            <p>2008年11月4日，奥巴马胜选，回顾《时代周刊》四年来对奥巴马的报道，见证他从政四年的得与失。</p>
+                        </div>
+                    </li>
+                    <li><a href="http://news.163.com/photoview/00AO0001/28934.html" class="left"><img width="400" height="280" src="http://img2.cache.netease.com/cnews/2012/11/5/201211051017363945a.jpg" title="美国大选双方冲刺拉票" alt="美国大选双方冲刺拉票"></a>
+                        <div class="widget-slide-content-text right">
+                            <h4><a href="http://news.163.com/photoview/00AO0001/28934.html">美国大选双方冲刺拉票</a></h4>
+                            <p>随着美国总统大选选战进入最后阶段，美国总统奥巴马和共和党总统候选人罗姆尼，分别密集开展竞选活动，希望争取更多选民的支持。</p>
+                        </div>
+                    </li>
+                    <li><a href="http://news.163.com/photoview/00AO0001/28930.html" class="left"><img width="400" height="280" src="http://img4.cache.netease.com/cnews/2012/11/5/20121105090450f7ea8.jpg" title="巴西观光火车脱轨撞山崖致2死40伤" alt="巴西观光火车脱轨撞山崖致2死40伤"></a>
+                        <div class="widget-slide-content-text right">
+                            <h4><a href="http://news.163.com/photoview/00AO0001/28930.html">巴西观光火车脱轨撞山崖致2死40伤</a></h4>
+                            <p>当地时间11月3日，巴西圣保罗，一辆行驶在圣保罗州东北部山区的观光火车发生脱轨事故撞上山崖，截至目前已造成车上2人死亡，40人受伤。</p>
+                        </div>
+                    </li>
+                    <li><a href="http://news.163.com/photoview/00AN0001/28924.html" class="left"><img width="400" height="280" src="http://img2.cache.netease.com/cnews/2012/11/5/20121105115934557c0.jpg" title="＂雪龙＂号对外开放 变身旅游景点" alt="＂雪龙＂号对外开放 变身旅游景点"></a>
+                        <div class="widget-slide-content-text right">
+                            <h4><a href="http://news.163.com/photoview/00AN0001/28924.html">"雪龙"号对外开放 变身旅游景点</a></h4>
+                            <p>11月3日，停靠在南沙沙仔岛码头的极地科考船“雪龙”号对外开放，不少市民进入“雪龙”号参观并拍照留念。</p>
+                        </div>
+                    </li>
+                    <li><a href="http://dlgxq.189.cn/web/lottery/index.jsp?__s__=cnybptr2dvsf22wmzsil1u1enmbt7sjh" class="left"><img width="400" height="280" src="http://img4.cache.netease.com/cnews/2012/11/5/20121105093055cd962.jpg" title="光棍节拖根光纤到家" alt="光棍节拖根光纤到家"></a>
+                        <div class="widget-slide-content-text right">
+                            <h4><a href="http://dlgxq.189.cn/web/lottery/index.jsp?__s__=cnybptr2dvsf22wmzsil1u1enmbt7sjh">光棍节拖根光纤到家</a></h4>
+                            <p>参与11月11日点亮光小区活动，60部iphone4s狂送</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget-slide-ctrl widget-slide-1-ctrl">
+                <a href="" class="widget-slide-ctrl-prev" >&lt;</a>
+                <ul class="widget-slide-ctrl-nav">
+                    <li class=""></li><li></li><li></li><li></li><li class="current"></li><li></li>        </ul>
+                <div class="widget-slide-ctrl-tabs" id="widget-slide-ctrl-tabs" >
+                    <ul>
+                        <li class=""><a href="http://news.163.com/photoview/00AN0001/28938.html"><img width="53" height="36" src="http://img4.cache.netease.com/cnews/2012/11/5/20121105115040e0a7a.jpg" title="直击京藏高速路风雪营救" alt="直击京藏高速路风雪营救"></a></li>
+                        <li class=""><a href="http://news.163.com/photoview/00AH0001/28920.html"><img width="53" height="36" src="http://img2.cache.netease.com/cnews/2012/11/5/20121105080749caed1.jpg" title="《看客》特刊：奥巴马的“时代”" alt="《看客》特刊：奥巴马的“时代”"></a></li>
+                        <li class=""><a href="http://news.163.com/photoview/00AO0001/28934.html"><img width="53" height="36" src="http://img2.cache.netease.com/cnews/2012/11/5/201211051017363945a.jpg" title="美国大选双方冲刺拉票" alt="美国大选双方冲刺拉票"></a></li>
+                        <li class=""><a href="http://news.163.com/photoview/00AO0001/28930.html"><img width="53" height="36" src="http://img4.cache.netease.com/cnews/2012/11/5/20121105090450f7ea8.jpg" title="巴西观光火车脱轨撞山崖致2死40伤" alt="巴西观光火车脱轨撞山崖致2死40伤"></a></li>
+                        <li class="current"><a href="http://news.163.com/photoview/00AN0001/28924.html"><img width="53" height="36" src="http://img2.cache.netease.com/cnews/2012/11/5/20121105115934557c0.jpg" title="＂雪龙＂号对外开放 变身旅游景点" alt="＂雪龙＂号对外开放 变身旅游景点"></a></li>
+                        <li class=""><a href="http://dlgxq.189.cn/web/lottery/index.jsp?__s__=cnybptr2dvsf22wmzsil1u1enmbt7sjh"><img width="53" height="36" src="http://img4.cache.netease.com/cnews/2012/11/5/20121105093055cd962.jpg" title="光棍节拖根光纤到家" alt="光棍节拖根光纤到家"></a></li>
+                    </ul>
+                </div>
+                <a href="" class="widget-slide-ctrl-next">&gt;</a>
+            </div>
+        </div>
+        <span class="blank6"></span>
+        <!--右侧广告-->
+
+    </div>
+</div>
+<span class="blank12"></span>
+<div class="area">
+    <div class="area-main">
+        <div class="mod">
+            <div class="widget-slide widget-slide-3">
+                <div class="widget-slide-body"  >
+                    <ul class="imgList-widget-8">
+                        <li class=""><a href="http://v.163.com/special/zongyisubject/yaochencaoyu.html?v_news"><img width="360" height="260" src="http://img1.cache.netease.com/cnews/2012/11/19/20121119100042d159e.jpg"  title="姚晨曹郁在新西兰大婚" alt="姚晨曹郁在新西兰大婚"></a>
+                            <a class="img-bg" href="http://v.163.com/special/zongyisubject/yaochencaoyu.html"></a>
+                            <div class="title-info">
+                                <h4><a href="http://v.163.com/special/zongyisubject/yaochencaoyu.html?v_news">姚晨曹郁在新西兰大婚</a></h4>
+                                <p><a href="http://v.163.com/special/zongyisubject/yaochencaoyu.html?v_news">当地时间17日，姚晨与曹郁将于新西兰皇后镇完婚。</a></p>
+                            </div>
+                        </li>
+                        <li class=""><a href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH?v_news"><img width="360" height="260" src="http://img3.cache.netease.com/cnews/2012/11/19/201211191347083df08.jpg"  title="挑战狂人：德国摇滚教父为“小比伯”疯狂" alt="挑战狂人：德国摇滚教父为“小比伯”疯狂"></a>
+                            <a class="img-bg" href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH"></a>
+                            <div class="title-info">
+                                <h4><a href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH?v_news">挑战狂人：德国摇滚教父为“小比伯”疯狂</a></h4>
+                                <p><a href="http://v.163.com/special/tiaozhankuangren/#V8DJCTEDH?v_news">“小比伯”熟识AC/DC乐队的100首歌曲，现场演奏high爆全场。</a></p>
+                            </div>
+                        </li>
+                        <li class="last"><a href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html?v_news"><img width="360" height="260" src="http://img6.cache.netease.com/video/2012/11/21/2012112110150120ce2.jpg"  title="迷魅金星：变性后的我重获新生" alt="迷魅金星：变性后的我重获新生"></a>
+                            <a class="img-bg" href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html"></a>
+                            <div class="title-info">
+                                <h4><a href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html?v_news">迷魅金星：变性后的我重获新生</a></h4>
+                                <p><a href="http://v.163.com/jishi/V7MIUGGFJ/V83BPBLA3.html?v_news">金星获奖无数，但这些都比不上性别上的改变让她满足</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget-slide-ctrl widget-slide-3-ctrl">
+                    <a href="" class="widget-slide-ctrl-prev" >&lt;</a>
+                    <ul class="widget-slide-ctrl-nav">
+                        <li></li><li class="current"></li><li></li></ul>
+                    <a href="" class="widget-slide-ctrl-next">&gt;</a>
+                </div>
+            </div>
+            <span class="blank6"></span>
+            <!--右侧广告-->
+
+        </div>
+    </div>
+</div>
+<span class="blank20"></span>
+<span class="blank12"></span>
+<script type="text/javascript" language="javascript" src="http://img1.cache.netease.com/cnews/js/ntes_jslib_1.x.js" charset="gb2312"></script>
+<script type="text/javascript" language="javascript" src="http://img1.cache.netease.com/cnews/img/gallery11/ntes_ui_scroll.js" charset="gb2312"></script>
+
+<script>
+    //Widget Slide
+    /*鼠标放上去出现切换大按钮和缩略图列表*/
+    var ctrlTabs = $('.widget-slide-ctrl-tabs');
+    var ctrlPrev = $('.widget-slide-ctrl-prev');
+    var ctrlNext = $('.widget-slide-ctrl-next');
+    var FOCUS_DELAY;
+    $('.widget-slide').addEvent('mouseover',function(){
+        clearTimeout(FOCUS_DELAY);
+        $( ".widget-slide-ctrl-tabs", $(this)).addCss('visibility:visible;');
+        $( ".widget-slide-ctrl-prev", $(this)).addCss('visibility:visible;');//类似于find(),$(selector, abc)
+        $( ".widget-slide-ctrl-next",  $(this)).addCss('visibility:visible;');
+    }) .addEvent('mouseout',function(){
+                //当前函数没有执行对象，就用一个变量储存当前的this
+                var t = this;
+                FOCUS_DELAY = setTimeout(function(){
+                    $( ".widget-slide-ctrl-tabs", $(t)).addCss('visibility:hidden;');
+                    $( ".widget-slide-ctrl-prev", $(t)).addCss('visibility:hidden;');
+                    $( ".widget-slide-ctrl-next",  $(t)).addCss('visibility:hidden;');
+                }, 25);
+            });
+    /*鼠标放小切换图上，出现切换图标*/
+    //Mod Scroll
+    (function(){
+        var Scrl = function(elem){
+            var axis = "x";
+            if ( $(elem).attr("class").indexOf("mod-scroll-y") != -1 ) axis = "y";
+            var t = this, body = NTES.one("> div.widget-slide-body > ul", elem);
+            t._ctrls = $("> div.widget-slide-ctrl > ul.widget-slide-ctrl-nav > li", elem);
+            t._ctrls_img = $("> div.widget-slide-ctrl > div.widget-slide-ctrl-tabs > ul > li", elem);
+            t._len = t._ctrls.length;
+            t.index = 0;
+            if (axis == "x"){
+                var bWidth = NTES.one("> li", body).offsetWidth * body.$("> li").length;
+                t._step = bWidth / t._len,
+                        body.addCss({ width: bWidth + "px"});
+                $(body.parentNode).addCss({ width: t._step + "px"});
+            }else{
+                t._step = NTES.one("> li", body).offsetHeight;
+                var bHeight = t._step * t._len;
+                body.addCss({ height: bHeight + "px"});
+                $(body.parentNode).addCss({ height: t._step + "px"});
+            }
+            t._scrl = new NTES.ui.Scroll(body, axis);
+            if (axis == "y"){
+                t._scrl.speed = 50;//50
+                t._scrl.fps = 20;//20
+                t._scrl.lpf = 1;
+            }
+            /*鼠标放到切换小按钮，切换大图*/
+            t._ctrls.each(function(i){
+                $(this).addEvent("mouseover", t.show.bind(t, i), i);
+            });
+            /*鼠标放到缩略图上，切换大图*/
+            t._ctrls_img.each(function(i){
+                $(this).addEvent("mouseover", t.show.bind(t, i), i);
+            });
+            /*鼠标点击左右切换按钮，切换大图*/
+            NTES.one("> div.widget-slide-ctrl > a.widget-slide-ctrl-prev", elem).addEvent("click", function(e){
+                e.preventDefault();
+                t.show(--t.index);
+            }).addEvent("mouseup", function(){ this.blur(); });
+            NTES.one("> div.widget-slide-ctrl > a.widget-slide-ctrl-next", elem).addEvent("click", function(e){
+                e.preventDefault();
+                t.show(++t.index);
+            }).addEvent("mouseup", function(){ this.blur(); });
+            t.show(0);
+        }
+        Scrl.prototype = {
+            show: function(i){
+                var t = this;
+                t.index = i < 0 ? t._len - 1 : i > t._len - 1 ? 0 : i;
+                t._scrl.onStart = function(){
+                    t._ctrls.removeCss("current");
+                    t._ctrls.$(t.index).addCss("current");
+                    if(t._ctrls_img.length > 0){
+                        t._ctrls_img.removeCss("current");
+                        t._ctrls_img.$(t.index).addCss("current");
+                    }
+
+                }
+                t._scrl.scrollTo(t._step * t.index);
+            }
+        }
+        $("div.widget-slide").each(function(){
+            new Scrl(this);
+        });
+    })();
+</script>
+</body>
+</html>
